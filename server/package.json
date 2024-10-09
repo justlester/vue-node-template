@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "justlester",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "csrf": "^3.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "module-alias": "^2.2.3",
+    "mysql2": "^3.11.3"
+  },
+  "_moduleAliases": {
+    "@root"      : ".", 
+    "@middlewares": "middlewares",
+    "@routes" : "routes",
+    "@utils"  : "utils"
+  }
+}
